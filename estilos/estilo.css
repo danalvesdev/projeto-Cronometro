@@ -26,6 +26,11 @@ p#relogio{
     font-family: 'arial', sans-serif;
 }
 
+p.botao{
+    display: flex;
+    justify-content: center;
+}
+
 p.botao button{
     width: 85px;
     aspect-ratio: 1/1;
@@ -38,4 +43,8 @@ p.botao button{
     color: white;
     font-size: 1.2em;
     margin: 5px;
+}
+
+button#zera{
+    display: none;
 }

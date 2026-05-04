@@ -26,4 +26,16 @@ inicia.addEventListener('click', function(event){
 
 para.addEventListener('click', function(){
     clearInterval(timer)
+    zera.style.display = 'flex'
+    para.style.display = 'none'
+    if(inicia === 'true'){
+        zera.style.display
+    }
+});
+
+zera.addEventListener('click', function(){
+    segundos = 0
+    min = 0
+    horas = 0
+    mostrar('')
 });
