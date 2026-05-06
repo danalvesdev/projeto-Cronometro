@@ -25,17 +25,6 @@ inicia.addEventListener("click", function (event) {
       segundos = 0;
       min++;
     }
-
-inicia.addEventListener("click", function (event) {
-  clearInterval(timer);
-  zera.style.display = "none";
-  para.style.display = "flex";
-  timer = setInterval(function () {
-    segundos++;
-    if (segundos == 60) {
-      segundos = 0;
-      min++;
-    }
     if (min == 60) {
       min = 0;
       horas++;
