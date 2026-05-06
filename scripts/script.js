@@ -17,7 +17,8 @@ mudarCor.addEventListener("click", function () {
 
 inicia.addEventListener("click", function (event) {
   clearInterval(timer);
-  alterarBotao();
+  zera.style.display = "none";
+  para.style.display = "flex";
   timer = setInterval(function () {
     segundos++;
     if (segundos == 60) {
