@@ -1,73 +1,73 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    background-color: rgb(45, 50, 54);
-    color: white;
+body {
+  background-color: rgb(45, 50, 54);
+  color: white;
 }
 
-.BodyWhite{
-    background-color: white;
-    color: black;
+.BodyWhite {
+  background-color: white;
+  color: black;
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 97vw;
-    height: 4vh;
-    padding: 20px;
-    background-color: rgb(73, 82, 92);
-    font-family: 'arial', sans-serif;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 97vw;
+  height: 4vh;
+  padding: 20px;
+  background-color: rgb(73, 82, 92);
+  font-family: "arial", sans-serif;
 }
 
-main#container{
-    width: 30vw;
-    height: 35vh;
-    margin: auto;
-    margin-top: 7%;
-    padding: 50px;
-    text-align: center;
-    background-color: lightslategrey;
-    border-radius: 15px;
+main#container {
+  width: 30vw;
+  height: 35vh;
+  margin: auto;
+  margin-top: 7%;
+  padding: 50px;
+  text-align: center;
+  background-color: lightslategrey;
+  border-radius: 15px;
 }
 
-i.fa-solid{
-    cursor: pointer;
+i.fa-solid {
+  cursor: pointer;
 }
 
-p#relogio{
-    font-size: 4.5em;
-    margin-top: 30px;
-    font-family: 'arial', sans-serif;
+p#relogio {
+  font-size: 4.5em;
+  margin-top: 30px;
+  font-family: "arial", sans-serif;
 }
 
-p.botao{
-    display: flex;
-    justify-content: center;
-    margin: 20px;
+p.botao {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
 }
 
-p.botao button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 85px;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    overflow: hidden;
-    cursor: pointer;
-    border-radius: 45%;
-    border: none;
-    background-color: rgb(73, 82, 92);
-    color: white;
-    font-size: 1.2em;
-    margin: 5px;
+p.botao button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 45%;
+  border: none;
+  background-color: rgb(73, 82, 92);
+  color: white;
+  font-size: 1.2em;
+  margin: 5px;
 }
 
-button#zera{
-    display: none;
+button#zera {
+  display: none;
 }
