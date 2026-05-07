@@ -1,73 +1,138 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: rgb(45, 50, 54);
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #111827, #1e1b4b);
   color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+/* modo claro */
 .BodyWhite {
-  background-color: white;
-  color: black;
+  background: #f4f4f4;
+  color: #111;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 97vw;
-  height: 4vh;
-  padding: 20px;
-  background-color: rgb(73, 82, 92);
-  font-family: "arial", sans-serif;
+
+  padding: 22px 35px;
+
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(10px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#mudarCor {
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#mudarCor:hover {
+  transform: scale(1.1);
 }
 
 main#container {
-  width: 30vw;
-  height: 35vh;
-  margin: auto;
-  margin-top: 7%;
-  padding: 50px;
+  width: 420px;
+  max-width: 90%;
+  margin: 80px auto;
+  padding: 50px 30px;
   text-align: center;
-  background-color: lightslategrey;
-  border-radius: 15px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow:
+    0 0 25px rgba(96, 165, 250, 0.2),
+    0 0 60px rgba(139, 92, 246, 0.15);
+  transition: 0.3s;
 }
 
-i.fa-solid {
-  cursor: pointer;
+main#container:hover {
+  transform: translateY(-5px);
 }
 
 p#relogio {
-  font-size: 4.5em;
-  margin-top: 30px;
-  font-family: "arial", sans-serif;
+  font-size: 5rem;
+  font-weight: bold;
+
+  letter-spacing: 3px;
+
+  margin-bottom: 40px;
+
+  text-shadow:
+    0 0 10px rgba(255, 255, 255, 0.5),
+    0 0 25px rgba(139, 92, 246, 0.5);
 }
 
 p.botao {
   display: flex;
   justify-content: center;
-  margin: 20px;
+  gap: 18px;
 }
 
 p.botao button {
+  width: 85px;
+  height: 85px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.4rem;
+  color: white;
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  box-shadow: 0 8px 20px rgba(124, 58, 237, 0.4);
+  transition: 0.25s;
+}
+
+p.botao button:hover {
+  transform: scale(1.08);
+}
+
+p.botao button:active {
+  transform: scale(0.96);
+}
+
+button#para {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 85px;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  overflow: hidden;
-  cursor: pointer;
-  border-radius: 45%;
-  border: none;
-  background-color: rgb(73, 82, 92);
-  color: white;
-  font-size: 1.2em;
-  margin: 5px;
+  background: linear-gradient(135deg, #334155, #1e293b);
 }
 
 button#zera {
+  background: linear-gradient(135deg, #dc2626, #991b1b);
   display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+/* responsivo */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  p#relogio {
+    font-size: 3.5rem;
+  }
+
+  p.botao button {
+    width: 70px;
+    height: 70px;
+  }
 }
